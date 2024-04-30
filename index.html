@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=, initial-scale=1.0"
+    />
+    <title>Toko AYA</title>
+
+    <!-- Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather icons  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+
+    <link rel="stylesheet"
+    href="style.css"
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"
+        >Toko <span>AYA</span></a
+      >
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"
+          ><i data-feather="search"></i
+        ></a>
+        <a
+          href="#"
+          id="shopping-cart-button"
+          ><i
+            data-feather="shopping-cart"
+          ></i
+        ></a>
+        <a href="#" id="hamburger-menu"
+          ><i data-feather="menu"></i
+        ></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input
+          type="search"
+          id="search-box"
+          placeholder="search here..."
+        />
+        <label for="search-box"
+          ><i data-feather="search"></i
+        ></label>
+      </div>
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+       <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/1.jpeg" alt="Chitato">
+          <div class="item-detail">
+            <h3>Chitato</h3>
+            <div class="item-price">IDR 3K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/2.jpeg" alt="Kopi Susu ABC">
+          <div class="item-detail">
+            <h3>Kopi Susu ABC</h3>
+            <div class="item-price">IDR 1.5K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/3.jpeg" alt="Tepung">
+          <div class="item-detail">
+            <h3>Tepung</h3>
+            <div class="item-price">IDR 3K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/4.jpeg" alt="Gula">
+          <div class="item-detail">
+            <h3>Gula</h3>
+            <div class="item-price">IDR 9K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/5.jpeg" alt="Susu Ultramilk">
+          <div class="item-detail">
+            <h3>Susu Ultramilk</h3>
+            <div class="item-price">IDR 6.5K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/6.jpeg" alt="Teh Sari Wangi">
+          <div class="item-detail">
+            <h3>Teh Sari Wangi</h3>
+            <div class="item-price">IDR 6.5K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/7.jpeg" alt="Indomie Goreng">
+          <div class="item-detail">
+            <h3>Indomie Goreng</h3>
+            <div class="item-price">IDR 3.5K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/8.jpeg" alt="Indomie Kuah TORI MISO">
+          <div class="item-detail">
+            <h3>Indomie Kuah TORI MISO</h3>
+            <div class="item-price">IDR 4.5K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/9.jpeg" alt="Pantene">
+          <div class="item-detail">
+            <h3>Pantene</h3>
+            <div class="item-price">IDR 28K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/10.jpeg" alt="Biore Guard">
+          <div class="item-detail">
+            <h3>Biore Guard</h3>
+            <div class="item-price">IDR 17.5K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+       </div>
+      <!-- Shopping Cart end -->
+
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <a href="#" class="cta"
+          >Beli Sekarang</a
+        >
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Toko </span>AYA</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img
+            src="img/tentang.jpeg"
+            alt="AYA"
+          />
+        </div>
+        <div class="content">
+          <h3>Tentang :D</h3>
+          <p>
+            Selamat datang di Toko
+            Grosir Toko Aya, tempat
+            terbaik untuk memenuhi
+            kebutuhan grosir Anda dengan
+            harga yang terjangkau dan
+            barang-barang lengkap untuk
+            keperluan sehari-hari. Kami
+            bangga menyediakan berbagai
+            macam produk berkualitas
+            mulai dari bahan makanan
+            hingga barang kebutuhan
+            rumah tangga.
+          </p>
+          <p>
+            Kami memahami betapa
+            pentingnya kemudahan
+            berbelanja dan harga yang
+            bersaing, itulah mengapa
+            kami selalu berupaya untuk
+            memberikan pengalaman
+            belanja yang memuaskan bagi
+            pelanggan kami. Dengan
+            layanan yang ramah dan
+            efisien, kami siap membantu
+            Anda menemukan produk yang
+            tepat sesuai dengan
+            kebutuhan Anda. Selamat
+            berbelanja di Toko Grosir
+            Toko Aya, tempat di mana
+            kebutuhan grosir Anda
+            menjadi prioritas utama!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Produk Section start -->
+    <section class="produk" id="produk">
+      <h2><span>Produk</span></h2>
+      <p>Produk-produk kami :3</p>
+
+      <div class="row">
+        <div class="produk-card">
+          <div class="produk-icons">
+            <a href="#"
+              ><i
+                data-feather="shopping-cart"
+              ></i
+            ></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+         <div class="produk-image">
+          <img src="img/1.jpeg" alt="Produk 1">
+         </div>
+         <div class="produk content">
+          <h3>Chitato</h3>
+          <div class="produuk-stars">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="produk-price">IDR 3K</div>
+         </div>
+        </div>
+        <div class="produk-card">
+          <div class="produk-icons">
+            <a href="#"
+              ><i
+                data-feather="shopping-cart"
+              ></i
+            ></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+         <div class="produk-image">
+          <img src="img/2.jpeg" alt="Kopi Susu ABC">
+         </div>
+         <div class="produk content">
+          <h3>Kopi Susu ABC</h3>
+          <div class="produuk-stars">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="produk-price">IDR 1.5K</div>
+         </div>
+        </div>
+        <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/3.jpeg" alt="Tepung">
+           </div>
+           <div class="produk content">
+            <h3>Tepung</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="produk-price">IDR 3K</div>
+           </div>
+          </div>
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/4.jpeg" alt="Gula">
+           </div>
+           <div class="produk content">
+            <h3>Gula</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="produk-price">IDR 9K</div>
+           </div>
+          </div>
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/5.jpeg" alt="Susu Ultramilk">
+           </div>
+           <div class="produk content">
+            <h3>Susu Ultramilk</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="produk-price">IDR 6.5K</div>
+           </div>
+          </div>
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/6.jpeg" alt="Teh Sari Wangi">
+           </div>
+           <div class="produk content">
+            <h3>Teh Sari Wangi</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="produk-price">IDR 6.5K</div>
+           </div>
+          </div>
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/7.jpeg" alt="Indomie Goreng">
+           </div>
+           <div class="produk content">
+            <h3>Indomie Goreng</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="produk-price">IDR 3.5K</div>
+           </div>
+          </div>
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/8.jpeg" alt="Indomie Kuah TORI MISO">
+           </div>
+           <div class="produk content">
+            <h3>Indomie Kuah TORI MISO</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="produk-price">IDR 4.5K</div>
+           </div>
+          </div>
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/9.jpeg" alt="Pantene">
+           </div>
+           <div class="produk content">
+            <h3>Pantene</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="produk-price">IDR 28K</div>
+           </div>
+          </div>
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#"
+                ><i
+                  data-feather="shopping-cart"
+                ></i
+              ></a>
+              <a href="#" class="item-detail-button"
+                ><i data-feather="eye"></i
+              ></a>
+            </div>
+           <div class="produk-image">
+            <img src="img/10.jpeg" alt="Biore Guard Antibacterial Bodyfoam">
+           </div>
+           <div class="produk content">
+            <h3>Biore Guard Antibacterial Bodyfoam</h3>
+            <div class="produuk-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="produk-price">IDR 17.5K</div>
+           </div>
+          </div>
+      </div>
+    </section>
+    <!-- Produk Section end -->
+
+    <!-- Kontak Section start -->
+    <section id="kontak" class="kontak">
+      <h2><span>Kontak</span></h2>
+      <p>>//<</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.151704913875!2d109.2385788!3d-7.448462900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655d3b24b775fd%3A0x73a92014f8414e9d!2sToko%20Aya!5e0!3m2!1sid!2sid!4v1713931415630!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input
+              type="text"
+              placeholder="nama"
+            />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input
+              type="text"
+              placeholder="email"
+            />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input
+              type="text"
+              placeholder="no hp"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn"
+          >
+            kirim pesan
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Kontak Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>
+          Created by
+          <a href="">NikeishAisar</a> |
+          &copy; 2024.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="img/1.jpeg" alt="Chitato">
+        <div class="produk-konten">
+          <h3>Chitato</h3>
+          <p>Makanan ringan dari kentang asli, renyah dan penuh rasa.</p>
+          <div class="produuk-stars">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="produk-price">IDR 3K</div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal Box Item Detail end -->
+
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
